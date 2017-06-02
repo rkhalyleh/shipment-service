@@ -1,0 +1,140 @@
+<!DOCTYPE link PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+	<script src="resources/js/jquery/jquery-3.1.1.min.js"></script>
+	<script src="resources/js/jquery/jquery-ui.min.js"></script>
+	<script src="resources/js/main.js"></script>
+	<script src="resources/js/newUser.js"></script>
+	<script src="resources/js/bmi.js"></script>
+	<script src="resources/js/showRecipe.js"></script>
+	<script src="resources/js/util.js"></script>
+	<script src="resources/js/healthStatus.js"></script>
+	<script src="resources/js/jquery/combobox.js"></script>
+	<script src="resources/js/grid/jsgrid.min.js"></script>
+	<script src="resources/js/viewUsers.js"></script>
+	<script src="resources/js/showAllGyms.js"></script>
+	<script src="resources/js/userHealthInfo.js"></script>
+
+	<link rel="stylesheet" href="resources/css/font-awesome.min.css">
+	<link rel="stylesheet" href="resources/css/jquery-ui.min.css">
+	<link rel="stylesheet" href="resources/css/sidebar-menu.css">
+	<link rel="stylesheet" href="resources/css/main.css">
+	<link rel="stylesheet" href="resources/css/bootstrap.min.css">
+	<link rel="stylesheet" href="resources/js/grid/jsgrid.min.css" />
+	<link rel="stylesheet" href="resources/js/grid/jsgrid-theme.min.css" />
+
+	<title>shipmentService System (SOA Course)</title>
+  	<meta charset="UTF-8">
+</head>
+
+<body>
+<div class="product">
+
+	<div class="top-band hidden-print">
+		<div style="cursor:pointer;margin: 4px 25px 10px 10px; float:left">
+			shipmentService System (SOA Course)
+		</div>
+		<a href="login/logout" class="pull-right">Logout</a>
+	</div>
+	<div class="ember-view column tab-column main-tab-column hidden-print">
+	
+		<section style="width: 200px">
+		    <ul class="sidebar-menu">
+		      <li class="sidebar-header">MAIN NAVIGATION</li>
+		      <li>
+		        <a href="#">
+		          <i class="fa fa-dashboard"></i><span>Dashboard</span>
+		        </a>
+		      </li>
+		      <li>
+		        <a href="#">
+		          <i class="fa fa-pie-chart"></i>
+		          <span class="salesOrdersMenuItem">Users</span>
+		          <i class="fa fa-angle-left pull-right"></i>
+		        </a>
+		        <ul class="sidebar-submenu">
+		          <li><a href="#"><i class="fa fa-circle-o"></i><span class="create-new-user">New User</span><span class="label pull-right create-new-user" title="New User">+</span></a></li>
+		          <li><a href="#"><i class="fa fa-circle-o"></i><span class="view-all-users" title="View All Users">View Users</span></a></li>
+		        </ul>
+		      </li>
+		      <li>
+		        <a href="#">
+		          <i class="fa fa-th"></i> <span class="view-bmi" title="View All BMI">BMI</span>
+		        </a>
+		      </li>
+		      <li>
+		        <a href="#">
+		          <i class="fa fa-files-o"></i>
+		          <span class="view-all-Recipe" title="View All Personal Recipes">Personal Recipes</span>
+		        </a>
+		      </li>
+		      <li>
+		        <a href="#">
+		          <i class="fa fa-files-o"></i>
+		          <span class="view-all-healthStatus" title="View health status">Health Status</span>
+		        </a>
+		      </li>
+		      <li>
+		        <a href="#">
+		          <i class="fa fa-files-o"></i>
+		          <span class="view-all-gyms" title="View All Customers">Gyms</span>
+		        </a>
+		      </li>
+		      <li>
+		        <a href="#">
+		          <i class="fa fa-files-o"></i>
+		          <span class="view-user-healthinfo" title="View User daily food plan">User Health info</span>
+		        </a>
+		      </li>
+	      
+		      <li class="sidebar-header">ADMIN</li>
+		      <li><a href="#"><i class="fa fa-circle-o text-red"></i> <span>Settings</span></a></li>
+		      <li><a href="#"><i class="fa fa-circle-o text-yellow"></i> <span>About</span></a></li>
+		      <li><a href="#"><i class="fa fa-circle-o text-aqua"></i> <span>Logout</span></a></li>
+		    </ul>
+		  </section>
+	
+	</div>
+	
+	<div class="column content-column txn-creation-column" style="overflow-y:auto;">
+		<table>
+			<tr>
+				<td class="main-content"></td>
+			</tr>
+			
+			<!-- <tr>
+				<td style="padding-top:20px;" class="shipmentService-repeater"></td>
+			</tr>
+			<tr>
+				<td style="padding-top:20px;">
+					<table class="main-table">
+						<tr>
+							<td  class="customer-notes-caption"></td>
+							<td class="customer-notes"></td>
+						</tr>
+					</table>
+				</td>
+			</tr> -->
+			<tr height="30px">
+				<td class="post-result"></td>
+			</tr>
+			<tr>
+				<td style="padding-top:20px;">
+					<table class="main-table">
+						<tr>
+							<td class="save-button"></td>
+							<td>&nbsp;&nbsp;</td>
+							<td class="cancel-button"></td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+		</table>
+	</div>
+  <script src="resources/js/jquery/sidebar-menu.js"></script>
+  <script>
+    $.sidebarMenu($('.sidebar-menu'))
+  </script>
+</body>
+
+</html>

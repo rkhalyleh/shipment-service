@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Context path="/shipmentService">
+	<!-- Resource name="jdbc/shipmentService"
+          auth="Container"
+          type="javax.sql.DataSource"
+          testWhileIdle="true"
+          testOnBorrow="true"
+          testOnReturn="false"
+          validationQuery="SELECT 1"
+          validationInterval="30000"
+          timeBetweenEvictionRunsMillis="30000"
+          maxActive="100"
+          minIdle="10"
+          maxWait="10000"
+          initialSize="10"
+          removeAbandonedTimeout="60"
+          removeAbandoned="true"
+          logAbandoned="true"
+          minEvictableIdleTimeMillis="30000"
+          jmxEnabled="true"
+          username="admin"
+          password="admin"
+          driverClassName="org.apache.derby.jdbc.EmbeddedDriver"
+          url="jdbc:derby:webapps/shipmentService/WEB-INF/databases/shipmentServiceDB;create=true"/> -->
+          
+          
+           <!-- Global Datasource for Derby JPetStoreDB database
+         <Resource name="jdbc/JPetStoreDB"
+              type="javax.sql.DataSource"  auth="Container"
+              description="Derby database for JPetStoreApp"
+              maxActive="100" maxIdle="30" maxWait="10000"
+              username="" password="" 
+              driverClassName="org.apache.derby.jdbc.EmbeddedDriver"
+              url="jdbc:derby:Databases/JPetStoreDB"/>
+           -->
+          
+          
+</Context>

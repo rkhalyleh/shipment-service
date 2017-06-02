@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:mvc="http://www.springframework.org/schema/mvc" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="
+        http://www.springframework.org/schema/beans     
+        http://www.springframework.org/schema/beans/spring-beans-4.2.xsd
+        http://www.springframework.org/schema/context
+        http://www.springframework.org/schema/context/spring-context-4.2.xsd
+        http://www.springframework.org/schema/mvc
+        http://www.springframework.org/schema/mvc/spring-mvc-4.2.xsd">
+        
+	<context:component-scan base-package="ps.shipmentService.services, ps.shipmentService.util" />
+	<!-- <mvc:annotation-driven /> -->
+	
+	<!-- enable spring annotations such as @Autowired -->
+    <context:annotation-config />
+	
+	<bean id="shipmentServiceDetails" class="ps.shipmentService.service.orchestration.ShipmentServiceImpl" autowire="byType"/>
+
+	<bean id="swaggerConfig" class="ps.shipmentService.util.SwaggerConfig" autowire="byType"/>
+	
+  </beans>
